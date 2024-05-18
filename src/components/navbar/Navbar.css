@@ -1,0 +1,151 @@
+.nav{
+    position: relative;
+    max-width: 100%;
+    position: sticky;
+    top: 0px;
+    left: 0;
+    right: 0;
+    color: #fff;
+    background: rgb(0,0,0);
+    background: linear-gradient(66deg, rgba(0,0,0,1) 83%, rgba(30,139,162,1) 90%, rgba(88,48,113,1) 95%);
+    z-index: 999;
+}
+
+
+
+.nav__container{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo h3{
+    cursor: pointer;
+    color: gold;
+}
+.nav__logo h3:hover{
+    color:goldenrod;
+    font-size: 1.2rem;
+}
+
+ .nav-list{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.2rem;
+
+
+}
+.nav-list .nav__link{
+    color: darkgrey;
+
+}
+
+.nav-menu, .nav-list .nav__link:hover{
+    border-bottom: 2px solid #fff ;
+    font-size: 1.3rem;
+    color: #fff;
+}
+.nav-menu, .nav-list .nav__link:focus{
+    border-bottom: 2px solid rgb(251, 226, 83);
+    color: red;
+
+}
+
+.nav__about, .nav__pro, .nav__prod{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    background: #000;
+    padding: 0 1.5rem;
+}
+.nav__about:hover, .nav__pro:hover, .nav__prod:hover{
+    border: 2px solid pink;
+    border-radius: 2rem 0 2rem 0;
+}
+.nav__about .ancod__icon:hover,
+.nav__pro .ancod__icon:hover,
+.nav__prod .ancod__icon:hover{
+    border: 2px solid pink;
+    color: #fff;
+}
+.nav__about .ancod__icon,
+.nav__pro .ancod__icon,
+.nav__prod .ancod__icon{
+    color: gold;
+
+}
+
+.nav-menu{
+    display: none;
+}
+
+
+
+.hamburger{
+    display: none;
+}
+
+@media screen and (max-width: 940px) {
+    .nav-list{
+        display: none;
+    }
+.nav__container{
+    padding: 0;
+}
+
+.nav__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    width: 100%;
+   padding:  1rem;
+}
+
+    .hamburger{
+        display: block;
+        padding:  1rem;
+    }
+
+    .nav-menu{
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        padding: 2rem;
+        display :grid;
+        gap: 2rem;
+        z-index: 888;
+        left: - 100%;
+        align-items: center;
+        justify-content: center;
+        transition: .10s ease-in;
+
+        max-width: 100%;
+        color: #fff;
+        background: rgb(0,0,0);
+        background: linear-gradient(66deg, rgba(0,0,0,1) 83%, rgba(30,139,162,1) 90%, rgba(88,48,113,1) 95%);
+    }
+
+    .active{
+        left:  0;
+    }
+
+    .nav-menu .nav__about, .nav-menu .nav__pro, .nav-menu .nav__prod{
+        display: flex;
+       align-items: flex-start;
+       justify-content: flex-start;
+       max-width: max-content;
+    }
+
+    .nav-menu .nav__about, .nav-menu .nav__pro, .nav-menu .nav__prod > *{
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-menu .nav__link{
+    color: #fff;
+}
+}
+

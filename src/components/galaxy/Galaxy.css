@@ -1,0 +1,79 @@
+.galaxy{
+    position: relative;
+    max-width: 100%;
+    background: rgba(0, 0, 1, 0.6);
+    color: #fff;
+    display: grid;
+    text-align: center;
+    place-content: center;
+}
+
+.galaxy::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url('../../assets/gal10.jpg') no-repeat center center/cover;
+    z-index: -1;
+    object-fit: contain;
+}
+
+.galaxy__container{
+    padding: 4rem;
+}
+.galaxy__container h1, h3{
+    color: goldenrod;
+    cursor: pointer;
+}
+.galaxy__container h3:hover{
+    color: #fff;
+}
+.galaxy__container h1:hover{
+    color: #fff;
+}
+
+
+.galaxy__span{
+    display: grid;
+    padding: 2rem 0;
+}
+
+.galaxy__container button{
+    margin: 2rem 0;
+    padding: .5rem 1.5rem;
+    color: #fff;
+    background: red;
+    border: none;
+    cursor: pointer;
+
+}
+
+.galaxy__down > *{
+    margin: 2rem;
+    color: #fff;
+}
+
+.galaxy__down .gal__a{
+    border-bottom: 2px solid darkgray;
+    cursor: pointer;
+
+}
+.galaxy__down .gal__a:hover{
+    color: goldenrod;
+
+}
+
+@media screen and (max-width: 620px) {
+    .galaxy__down{
+    display: grid;
+
+
+}
+.galaxy__down > *{
+    margin: .5rem;
+    color: #fff;
+
+}
+
+}
+

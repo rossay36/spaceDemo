@@ -1,0 +1,55 @@
+.univers{
+    position: relative;
+    max-width: 100%;
+    color: #fff;
+    place-content: center;
+    text-align: center;
+}
+
+.univers::before{
+    position: absolute;
+    content: '';
+    background: url('../../assets/gal8.jpg');
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+
+}
+
+.univers__container{
+   padding:  7rem;
+
+}
+
+
+
+
+.univers__span{
+    display: grid;
+    margin: 2rem;
+}
+
+.univers__button{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.univers__button button{
+   padding: .5rem 1.5rem;
+   color: #fff;
+   background: red;
+   cursor: pointer;
+}
+
+@media screen and (max-width: 620px) {
+    .univers__container{
+    padding: 4rem 0 7rem 0;
+
+}
+}

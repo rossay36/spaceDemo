@@ -1,0 +1,44 @@
+.hero{
+    position: relative;
+    max-width: 100%;
+    min-height: max-content;
+    background: #000;
+
+}
+
+.hero__container{
+}
+
+/* .hero__sidebar{
+    position: absolute;
+    left: 0;
+    top: 140;
+    z-index: 887;
+} */
+
+.hero__button{
+    position: absolute;
+    bottom: 5rem;
+    right: 2rem;
+}
+
+.hero__button button{
+   margin: .5rem;
+   padding: .2rem .5rem;
+   color: #fff;
+   background: red;
+   border-radius: .7rem;
+   border: none;
+}
+.hero__button button:hover{
+  background: #000;
+  color: goldenrod;
+}
+
+@media screen and (max-width: 620Px) {
+    .hero__button{
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+}
+}

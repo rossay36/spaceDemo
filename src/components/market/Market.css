@@ -1,0 +1,248 @@
+.market{
+    max-width: 100%;
+    background: #000;
+    color: #fff;
+}
+
+.market__container{
+    max-width: max-content;
+    padding: 2rem;
+    /* padding-bottom: 2rem; */
+}
+
+.active{
+    display: none;
+}
+
+.market__column-NX{
+   width: 100%;
+}
+
+.market__button .market__icon{
+    font-size: 2rem;
+}
+
+.market__top{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.market__first{
+    position: relative;
+    flex: 5;
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem 0;
+    content: '';
+    background: url('../../assets/cyber-bg.png') no-repeat center center/cover;
+
+}
+
+.market__buttons{
+    display: flex;
+    gap: 4rem;
+}
+
+.market__buttons button:nth-of-type(1){
+   background: red;
+   padding: .5rem 1.5rem;
+   color: #fff;
+   border: none;
+}
+
+.market__buttons button:nth-of-type(2){
+    background: transparent;
+    padding: .5rem 1.5rem;
+    color: #fff;
+    border: 3px solid #f8f8f8;
+
+
+}
+
+.market__buttons button:nth-of-type(3){
+    background: lightblue;
+    padding: .5rem 1.5rem;
+    color: #fff;
+    border: none;
+
+
+}
+
+.market__center{
+    position: relative;
+    flex: 3;
+    background: #f8f8f8;
+    color: #000;
+    display: flex;
+    gap: 5rem;
+    padding: 2rem 8rem;
+}
+
+.market__center > * {
+    flex-grow: 1;
+    flex-basis: auto;
+    /* flex-basis: calc(calc(30rem, - 100%) * 999); */
+}
+
+.market__img{
+    position: relative;
+}
+
+.market__img img{
+    max-width: 20rem;
+    position: relative;
+    content: '';
+}
+.market__img h1{
+    background: none;
+    position: absolute;
+    box-shadow: none;
+    left: 0;
+    z-index: 2;
+}
+
+.market__col{
+    display: grid;
+}
+
+.market__col h1{
+    margin: 1rem 0;
+}
+
+.market__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.market__btn button{
+    padding: .3rem 2rem;
+    border: none;
+    color: #fff;
+    background: red;
+}
+
+.market__bottom{
+    position: relative;
+    content: '';
+    background: url('../../assets/contact-bg.png');
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.market__bottom span{
+    max-width: 55%;
+    margin: 1rem 0;
+}
+
+
+@media screen and (max-width:940px) {
+
+
+    .market__top{
+        display: flex;
+        grid-template-columns: 1fr;
+    }
+
+    .market__first{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    /* .market__first .span{
+        margin: 1rem 5rem;
+    } */
+
+    .market__buttons{
+        display: grid;
+        gap: 1rem;
+    }
+
+    .market__buttons button{
+        margin: 0 4rem;
+    }
+
+    .market__center{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem;
+        margin: 0;
+        gap: 1rem;
+    }
+
+    .market__img img{
+        max-width: 100%;
+    }
+
+    .market__bottom{
+        display: block;
+        text-align: start;
+    }
+    .market__bottom span{
+        max-width: 100%;
+    }
+    .market__bottom h1{
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (max-width:620px) {
+
+
+    .market__top{
+        display: flex;
+        grid-template-columns: 1fr;
+    }
+
+    .market__first{
+        display: grid;
+        grid-template-columns: 1fr;
+        line-height: 1.1;
+        padding: 1rem;
+    }
+
+    .market__buttons{
+        display: grid;
+        gap: 1rem;
+    }
+
+    .market__buttons button{
+        margin: 0 3rem;
+    }
+
+    .market__center{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+        margin: 0;
+        gap: 0;
+    }
+
+    .market__img img{
+        max-width: 100%;
+    }
+
+    .market__bottom{
+        display: block;
+        text-align: start;
+    }
+    .market__bottom span{
+        max-width: 100%;
+    }
+    .market__bottom h1{
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+    }
+}

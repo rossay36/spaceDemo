@@ -1,0 +1,77 @@
+.gallax{
+    position: relative;
+    max-width: 100%;
+    background: rgba(0, 0, 1, 0.499);
+    color: #fff;
+    display: grid;
+    text-align: center;
+    place-content: center;
+}
+
+.gallax::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url('../../assets/gal2.jpg') no-repeat center center/cover;
+    z-index: -1;
+    object-fit: contain;
+}
+
+.gallax__container{
+    padding: 4rem;
+}
+.gallax__container h1, h3{
+    color: goldenrod;
+    cursor: pointer;
+}
+.gallax__container h3:hover{
+    color: #fff;
+}
+.gallax__container h1:hover{
+    color: #fff;
+}
+
+
+.gallax__span{
+    display: grid;
+    padding: 2rem 0;
+}
+
+.gallax__container button{
+    margin: 2rem 0;
+    padding: .5rem 1.5rem;
+    color: #fff;
+    background: red;
+    border: none;
+    cursor: pointer;
+
+}
+
+.gallax__down > *{
+    margin: 2rem;
+    color: #fff;
+}
+
+.gallax__down .gal__a{
+    border-bottom: 2px solid darkgray;
+    cursor: pointer;
+
+}
+.gallax__down .gal__a:hover{
+    color: goldenrod;
+
+}
+@media screen and (max-width: 620px) {
+    .gallax__down{
+    display: grid;
+
+}
+.gallax__down > *{
+    margin: .5rem;
+    color: #fff;
+}
+
+}
+
+

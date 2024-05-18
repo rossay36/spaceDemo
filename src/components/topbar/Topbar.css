@@ -1,0 +1,136 @@
+.topbar{
+    position: relative;
+    position: sticky;
+    top: -100px;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    z-index: 888;
+    max-width: 100%;
+    color: #fff;
+    background: rgb(0,0,0);
+    background: linear-gradient(66deg, rgba(0,0,0,1) 83%, rgba(30,139,162,1) 90%, rgba(88,48,113,1) 95%);
+}
+
+.topbar__container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+
+}
+
+.topbar__logo{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.topbar__logo h2{
+    cursor: pointer;
+    color: goldenrod;
+}
+.topbar__logo h2:hover{
+    color: gold;
+    font-size: 1.6rem;
+}
+
+.topbar__input{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+
+    background: none;
+    border: none;
+    outline: none;
+
+    background-color: darkgray;
+    color: #fff;
+    padding: .4rem 1.5rem;
+    border-radius: .5rem;
+}
+
+.topbar__input input{
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+.topbar__input input:focus{
+    outline: none;
+}
+
+.topbar__input  .left-icon{
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.topbar__input  .left-icon:hover{
+    font-size: 1.3rem;
+    color: goldenrod;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.topbar__ul-list{
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+
+
+}
+
+.topbar__ul-list .topbar__link{
+    color: #fff;
+}
+.topbar__ul-list .topbar__link:hover{
+    color: goldenrod;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #fff;
+}
+.topbar__ul-list .topbar__link:focus{
+    border-bottom: 2px solid red;
+    color: darkgray;
+
+}
+
+.top__post{
+    padding: .5rem 1.5rem;
+    background-color: red;
+}
+
+
+@media screen and (max-width: 940px) {
+    .topbar__logo{
+       max-width: 100%;
+       align-items: center;
+       justify-content: center;
+    }
+    .topbar__ul-list{
+        display: none;
+    }
+
+    .topbar__input{
+        max-width: 100%;
+    }
+    .topbar__input input{
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 620px) {
+    .topbar__logo{
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .topbar__ul-list{
+        display: none;
+    }
+
+    .topbar__input{
+        max-width: 100%;
+    }
+
+}
+

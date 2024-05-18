@@ -1,0 +1,141 @@
+.sidebar{
+    position: absolute;
+    max-width: 300px;
+    background: #000;
+    color: #fff;
+    padding: 1rem;
+    z-index: 998;
+
+}
+
+.sidebar__container{
+    display: grid;
+}
+
+.sidebar__logo{
+    position: relative;
+    position: sticky;
+    top: 140px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sidebar__hamburger{
+    position: absolute;
+    top: 0;
+    right: -3rem;
+    width: 56px;
+    height: 54px;
+    border-radius: 50%;
+    margin-right: auto 35px;
+    border: none;
+    background: none;
+    padding-left: .5rem;
+    padding-bottom: .5rem;
+    cursor: pointer;
+
+    background-color: #000;
+    border: 3px solid goldenrod;
+    transition: 0.4s;
+    z-index: 1;
+}
+
+.sidebar__hamburger span{
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    margin-top: 4px;
+    border-radius: 20px;
+}
+
+.sidebar-NX{
+    width: max-content;
+}
+
+.sidebar__hamburger-out {
+    background-color: rgb(101, 73, 4);
+    margin-top: 1.9rem;
+    margin-right: -1rem;
+}
+
+.sidebar__hamburger-out span{
+    background-color: #000;
+}
+
+
+.sidebar__hamburger-in:hover span:nth-child(1){
+    width: 24px;
+    transform: translate(5px, 8px) rotate(-23deg);
+    background-color: lightgreen;
+}
+.sidebar__hamburger-in:hover span:nth-child(2){
+     display: none;
+}
+.sidebar__hamburger-in:hover span:nth-child(3){
+    width: 24px;
+    transform: translate(5px, 8px) rotate(23deg);
+    background-color: gold;
+
+    margin-bottom: 1rem;
+
+}
+
+.sidebar__hamburger-out:hover span:nth-child(1){
+    width: 24px;
+    transform: translate(5px, 8px) rotate(23deg);
+    background-color: lightpink;
+
+}
+.sidebar__hamburger-out:hover span:nth-child(2){
+     display: none;
+}
+.sidebar__hamburger-out:hover span:nth-child(3){
+    width: 24px;
+    transform: translate(5px, 8px) rotate(-23deg);
+    background-color: red;
+    margin-bottom: 1rem;
+
+}
+
+.sidebar__lists{
+}
+
+.sidebar__list{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+
+
+
+
+
+}
+
+.sidebar__list .sidebar__span, .sidebar__spans{
+    color: #fff !important;
+    margin-bottom: 1rem;
+}
+
+.sidebar__list-NX .sidebar__spans{
+}
+
+@media screen and (max-width: 940px) {
+    .sidebar__list{
+        font-size: 1rem;
+    }
+   .sidebar__list-NX{
+    display: none;
+   }
+
+   .sidebar__logo h1{
+    display: none;
+   }
+
+   .sidebar__hamburger-out{
+       margin: 0;
+   }
+}

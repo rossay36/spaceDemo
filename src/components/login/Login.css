@@ -1,0 +1,89 @@
+.login{
+    max-width: 100%;
+    background: gray;
+}
+
+.login__container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 2rem;
+    padding: 2rem;
+
+}
+.login__container{
+    flex-grow: 1;
+    flex-basis: calc(calc(35rem - 100%) * 999);
+
+}
+
+.login__form{
+    display: grid;
+    text-align: start;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.login__form input{
+    padding: .5rem 1.5rem;
+    border-radius: .5rem;
+    border: none;
+}
+.login__form input:focus{
+   outline: none;
+}
+
+.login__password{
+    display: grid;
+    text-align: end;
+}
+
+.login__check{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.login__hr{
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+}
+
+.login__hr hr{
+   width: 100px;
+}
+
+
+.login__button{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.login__box{
+    display: flex;
+    align-items: center;
+    padding: .5rem 1.5rem;
+    outline: 2px solid goldenrod;
+    border-radius: .5rem;
+    gap: 1rem;
+}
+
+.login__box .login__icon{
+    font-size: 2rem;
+}
+.login__box .log__icon{
+    color: blue;
+}
+
+.login__form button{
+    padding: .5rem 1.5rem;
+    background: none;
+    outline: none;
+    border: none;
+
+    background-color: blueviolet;
+    border-radius: .5rem;
+}

@@ -1,0 +1,164 @@
+.ancod{
+   max-width: max-content;
+   color: #fff;
+   background: darkgray;
+   padding: 0 2rem;
+}
+
+.ancod__container{
+   max-width: max-content;
+}
+
+.ancod__content{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   flex-wrap: wrap;
+   gap: 1rem;
+}
+
+.ancod__content > *{
+   flex-grow: 1;
+   flex-basis: calc(calc(35rem, - 100% ) * 999);
+}
+
+.ancod__icon{
+   background: none;
+   background-color: none;
+   font-size: 2rem;
+}
+.active{
+   display: none;
+
+}
+
+.ancod__content-NX{
+   background: none;
+}
+
+.ancod__first{
+   display: grid;
+   grid-template-columns: 1fr ;
+
+}
+
+.ancod__first > *{
+   flex-grow: 1;
+   flex-basis: calc(calc(35rem, - 100% ) * 999);
+   padding: .2rem;
+}
+
+.ancod__first-box {
+   background: rgb(55, 39, 1);
+}
+
+
+.ancod__second{
+   display: grid;
+   grid-template-columns: 1fr  ;
+
+}
+
+
+
+.ancod__second-span{
+   display: flex;
+   gap: .5rem;
+
+
+}
+.ancod__second-span span{
+   background: rgb(0,0,0);
+   background: linear-gradient(66deg, rgba(0,0,0,1) 83%, rgba(30,139,162,1) 90%, rgba(88,48,113,1) 95%);
+   padding: 0.5rem;
+}
+.ancod__title{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   background: rgb(0,0,0);
+   background: linear-gradient(66deg, rgba(0,0,0,1) 83%, rgba(30,139,162,1) 90%, rgba(88,48,113,1) 95%);
+
+}
+
+.ancod__title img{
+   max-width: 250px;
+}
+
+.ancod__title > *{
+   flex-grow: 1;
+   flex-basis: calc(calc(30rem, - 100% ) * 999);
+   padding: .2rem;
+}
+
+@media screen and (max-width: 940px) {
+   .ancod__content{
+      display:grid;
+      gap: 2rem;
+      width: 100%;
+      grid-template-columns: 1fr;
+   }
+
+   .active{
+   display: none;
+
+}
+
+   .ancod__content-NX{
+      background: none;
+}
+
+
+   .ancod__second{
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: 1fr;
+   }
+
+   .ancod__second-span{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: .5rem;
+   }
+   .ancod__title{
+   display: grid;
+   grid-template-columns: 1fr 1fr ;
+
+}
+}
+
+
+
+@media screen and (max-width: 620px) {
+   .ancod__content{
+      display:grid;
+      gap: 2rem;
+      width: 100%;
+      grid-template-columns: 1fr;
+   }
+
+   .active{
+   display: none;
+
+}
+
+   .ancod__content-NX{
+      background: none;
+}
+
+
+   .ancod__second{
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: 1fr;
+   }
+
+   .ancod__second-span{
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: .5rem;
+   }
+   .ancod__title{
+   display: grid;
+   grid-template-columns: 1fr ;
+
+}
+}
